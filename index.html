@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="navbar">    
+        <nav class="navbar-nav">
+            <h3>Bookshelf App</h3>
+        </nav>
+    </section>
+    <section class="container">
+        <div class="row-form">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Masukan Buku Baru</h4>
+                </div>
+                <div class="card-body">
+                    <form class="form" id="form">
+                        <div class="form-input">
+                            <label for="judul" class="form-label">Judul Buku</label>
+                            <input type="text" class="form-control" id="judul" required="true">
+                        </div>
+                        <div class="form-input">
+                            <label for="penulis" class="form-label">penulis</label>
+                            <input type="text" class="form-control" id="penulis" required="true">
+                        </div>
+                        <div class="form-input">
+                            <label for="tahun" class="form-label">Tahun </label>
+                            <input type="text" class="form-control" id="tahun" required="true">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="selesai">
+                            <label class="form-check-label" for="selesai">Selesai dibaca</label>
+                        </div>
+                        <div class="button-submit">
+                            <button type="submit" class="btn-submit">Masukan buku</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row-books">
+            <div class="row-search">
+                <input type="text" class="form-control" id="search" >
+                <div class="button-search">
+                    <button class="btn-search" id="btn-search">Cari Buku</button>    
+                </div>
+            </div>
+            <div class="row-content-book" id="content-wrapper">
+                <div class="col-content">
+                    <div class="card-wrapper">
+                        <div class="header-title">
+                            <h3>Belum selesai dibaca</h3>
+                            <hr class="line">
+                        </div>
+                        <div class="list-item" id="list-book">    
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-content">
+                    <div class="col-content">
+                        <div class="card-wrapper">
+                            <div class="header-title">
+                                <h3>Selesai dibaca</h3>
+                                <hr class="line">
+                            </div>
+                            <div class="list-item" id="completed">    
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/dom.js"></script>
+</body>
+</html>
